@@ -17,7 +17,9 @@ class CreatePricesFromFile
 
   def build_from_csv
     CSV.foreach(path, headers: true) do |row|
-      Price.create!(
+      # Fail duplicate validations silently so that this can be run on new
+      # datasets
+      Price.create(
         amount: row["Close"],
         date: row["Date"],
         market_timing: market_timing,
