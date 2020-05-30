@@ -4,17 +4,17 @@ class PredictionPresenter < SimpleDelegator
     "$#{((1 + percentage) * prediction.price.amount.to_f).round(2)}"
   end
 
-  def price
+  def formatted_price
     "$#{prediction.price.amount.to_f}"
   end
 
   def change_percentage
-    "#{percentage}%"
+    "#{percentage.round(2)}%"
   end
 
   def date
     # could wrap this in date formatter 
-    prediction.date
+    prediction.price.date
   end
 
   private
