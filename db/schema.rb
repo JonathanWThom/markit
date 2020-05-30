@@ -16,11 +16,11 @@ ActiveRecord::Schema.define(version: 2020_05_30_192715) do
   enable_extension "plpgsql"
 
   create_table "predictions", force: :cascade do |t|
-    t.date "date", null: false
+    t.bigint "price_id"
     t.decimal "projected_change", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["date"], name: "index_predictions_on_date"
+    t.index ["price_id"], name: "index_predictions_on_price_id"
   end
 
   create_table "prices", force: :cascade do |t|
@@ -36,4 +36,5 @@ ActiveRecord::Schema.define(version: 2020_05_30_192715) do
     t.index ["symbol"], name: "index_prices_on_symbol"
   end
 
+  add_foreign_key "predictions", "prices"
 end

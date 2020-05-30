@@ -7,7 +7,7 @@ class PredictionCreator
     prediction = ml.predict(price)
 
     Prediction.create!(
-      date: price.date,
+      price: price,
       projected_change: prediction
     )
   end
