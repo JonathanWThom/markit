@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_30_052458) do
+ActiveRecord::Schema.define(version: 2020_05_30_192715) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "predictions", force: :cascade do |t|
+    t.date "date", null: false
+    t.decimal "projected_change", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["date"], name: "index_predictions_on_date"
+  end
 
   create_table "prices", force: :cascade do |t|
     t.integer "symbol", default: 0, null: false
