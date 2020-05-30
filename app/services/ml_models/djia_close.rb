@@ -3,48 +3,74 @@ module MlModels
     def train
       data = []
       prices.each_with_index do |price, index|
-        close = price[0].to_f
-        next_day = prices[index + 1]
-        previous_day = prices[index - 1]
-
-        if next_day.present? && previous_day.present?
-          next_day_price = next_day[0].to_f
-          previous_day_price = previous_day[0].to_f
-          change_from_previous_day = close / previous_day_price
-          next_day_change = close / next_day_price
-
-          puts "Close: #{close}"
-          puts "Previous Day Price: #{previous_day_price}"
-          puts "Change from Previous Day: #{change_from_previous_day - 1}"
-          puts "Next Day Price: #{next_day_price}"
-          puts "Next Day Change: #{next_day_change - 1}"
-          puts "\n\n"
-
+        if next_day(index).present? && previous_day(index).present?
           data << {
-            date: price[1],
-            next_day_change: next_day_change - 1, 
-            change_from_previous_day: change_from_previous_day - 1,
+            date: price[:date],
+            next_day_change: next_day_change(price, index), 
+            change_from_previous_day: change_from_previous_day(price, index),
           }
         end
       end
+
+      puts data
 
       write_model(data)
     end
 
     def predict(price_record)
-      index = prices.index { |price| price[1] == price_record.date }
-      previous_day = prices[index - 1]
+      index = prices.index { |price| price[:date] == price_record.date }
      
-      if previous_day.present?
-        change_from_previous_day = prices[index][0].to_f / previous_day[0].to_f
-        model.predict(change_from_previous_day: change_from_previous_day - 1)
+      if previous_day(index).present?
+        # Put this in a presenter
+        prediction = model.predict(change_from_previous_day: change_from_previous_day(prices[index], index))
+        puts "Price on #{prices[index][:date]}: #{prices[index][:amount].to_f}"
+        puts "Expected change on next trading day: #{(prediction * 100).round(2)}%"
+        next_day = (1 + prediction) * prices[index][:amount].to_f
+        puts "Expect price on next trading day: #{next_day.round(2)}"
+        actual = prices[index + 1]
+        if actual.present?
+          puts "Actual price: #{actual[:amount].to_f}"
+        end
+
+        prediction
       end
     end
 
     private
 
+    def change_from_previous_day(price, index)
+      price[:amount] / previous_day_price(index) - 1
+    end
+
+    def next_day_change(price, index)
+      price[:amount] / next_day_price(index) - 1
+    end
+
+    def previous_day(index)
+      prices[index - 1]
+    end
+
+    def previous_day_price(index)
+      previous_day(index)[:amount]
+    end
+
+    def next_day(index)
+      prices[index + 1]
+    end
+
+    def next_day_price(index)
+      next_day(index)[:amount]
+    end
+
     def prices 
-      @_prices ||= Price.close.djia.order(:date).pluck(:amount, :date)
+      @_prices ||= begin
+        Price.close.djia.order(:date).pluck(:amount, :date).map do |data|
+          {
+            amount: data[0],
+            date: data[1]
+          }
+        end
+      end
     end
 
     def model_file
