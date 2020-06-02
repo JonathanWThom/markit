@@ -1,24 +1,31 @@
-# README
+# Setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. `bin/setup`
+2. `rails db:seed`
+3. `rails s`
 
-Things you may want to cover:
+# Site
 
-* Ruby version
+https://markit-predictor.herokuapp.com/
 
-* System dependencies
+# Ideas/Improvements
 
-* Configuration
+1. Make the model more powerful by incorporating more data.
 
-* Database creation
+2. Don't store all price records - they aren't necessary.
 
-* Database initialization
+3. Support more indexes (S&P, Nasdaq, etc)
 
-* How to run the test suite
+4. Create a record of past predictions and how the bot has fared over time.
 
-* Services (job queues, cache servers, search engines, etc.)
+5. Create a "beat the bot" feature where users can log their own predictions.
 
-* Deployment instructions
+6. Aggregate user predictions - psuedo "futures" market.
 
-* ...
+7. Make prediction task more robust - it is idempotent but in a hacky way.
+
+8. Much nicer front end - it is setup for react with webpacker
+
+9. Dockerize (for Heroku)
+
+10. Add CI/GitHub actions
