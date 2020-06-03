@@ -1,6 +1,10 @@
 class DjiaData
   def generate_prediction 
+    original_price_count = Price.close.djia.count
     CreatePricesFromFile.new(file.path).build_from_csv
+
+    return if Price.close.djia.count == original_price_count
+
     file.unlink
 
     PredictionUpdater.new(Prediction.last).set_actual_values
