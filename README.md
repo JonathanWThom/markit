@@ -16,7 +16,7 @@ https://markit-predictor.herokuapp.com/
 
 3. Support more indexes (S&P, Nasdaq, etc)
 
-4. Create a record of past predictions and how the bot has fared over time.
+4. ~~Create a record of past predictions and how the bot has fared over time.~~
 
 5. Create a "beat the bot" feature where users can log their own predictions.
 
