@@ -1,15 +1,9 @@
-<h3>DJIA</h3>
-<p>
-  <strong>Closing price for <%= @prediction.date %>: </strong>
-  <%= @prediction.formatted_price %>
-</p>
-<p>
-  <strong>Projected percent change on next trading day: </strong>
-  <%= @prediction.change_percentage %>
-</p>
-<p>
-  <strong>Projected closing price on next trading day: </strong>
-  <%= @prediction.projected_price %>
-</p>
+<h3>DJIA Prediction History</h3>
+<%= link_to "Home", root_path %>
 
-
+<% @predictions.each do |prediction| %>
+  <p><strong>Date: </strong><%= prediction.price.date + 1.day %>
+  <p><strong>Projected price: </strong><%= prediction.projected_price %>
+  <p><strong>Actual price: </strong><%= prediction.actual_price %>
+  <hr>
+<% end %>

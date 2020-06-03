@@ -18,96 +18,96 @@
           <MiningSchema>
             <MiningField name="change_from_previous_day"/>
           </MiningSchema>
-          <Node score="-0.0003670828038540983">
+          <Node score="-0.0003641462945600539">
             <True/>
-            <Node score="-0.00016008278290338473">
+            <Node score="-0.00015714633386504855">
               <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.023972045465686913"/>
-              <Node score="-0.0006182393700174422">
-                <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.015203957499897955"/>
-                <Node score="-0.0002814719794707919">
-                  <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0037057470212330263"/>
-                  <Node score="-0.00021303951441039426">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0029793415395775583"/>
-                    <Node score="-9.035882080587392e-05">
-                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.032051453795083944"/>
-                    </Node>
-                    <Node score="-0.00027704361844680157">
-                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0016479298526071789"/>
-                      <Node score="-0.0004763086225240017">
-                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.028524367061468294"/>
+              <Node score="-0.0006399294382615772">
+                <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.015259790271704826"/>
+                <Node score="-2.967901415942153e-05">
+                  <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.014702914019496147"/>
+                  <Node score="-0.00027853553327650526">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0037057470212330263"/>
+                    <Node score="-0.00021010307048284827">
+                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0029793415395775583"/>
+                      <Node score="-8.742233711941724e-05">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.032051453795083944"/>
                       </Node>
-                      <Node score="-0.00020361411913682033">
-                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.01792076425293643"/>
-                      </Node>
-                      <Node score="-0.0005933201717181749">
-                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.013817539657456543"/>
-                        <Node score="-0.00033628344481093005">
-                          <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.014198844006559777"/>
+                      <Node score="-0.00027384741636404336">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0016479298526071789"/>
+                        <Node score="-0.0004733721688298818">
+                          <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.028524367061468294"/>
+                        </Node>
+                        <Node score="-0.00020067767199980743">
+                          <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.01792076425293643"/>
+                        </Node>
+                        <Node score="-0.00036547658968643433">
+                          <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.013817539657456543"/>
                         </Node>
                       </Node>
-                      <Node score="0.00017211428594402026">
-                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.012882544365810015"/>
-                        <Node score="-0.00028579855837656203">
-                          <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.013244595657082922"/>
+                      <Node score="3.6132937341171287e-06">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.001894340174781606"/>
+                      </Node>
+                      <Node score="-0.0003249156944400442">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0023693780395041774"/>
+                      </Node>
+                    </Node>
+                    <Node score="-8.19411458989806e-06">
+                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0035129754943268713"/>
+                    </Node>
+                  </Node>
+                  <Node score="-0.0005992032912415118">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004770368491767154"/>
+                    <Node score="5.406242184514005e-05">
+                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004280851636280593"/>
+                      <Node score="-0.000559072257225404">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004203785392536658"/>
+                        <Node score="-0.00035445867202085827">
+                          <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.003963451124757497"/>
                         </Node>
                       </Node>
-                      <Node score="-0.0004745498307417845">
-                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.012449249401945058"/>
-                      </Node>
-                    </Node>
-                    <Node score="6.768495173984485e-07">
-                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.001894340174781606"/>
-                    </Node>
-                    <Node score="-0.00032785213674449193">
-                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0023693780395041774"/>
                     </Node>
                   </Node>
-                  <Node score="-1.1130556397621807e-05">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0035129754943268713"/>
+                  <Node score="-1.1997447866142746e-05">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.00513700861911644"/>
                   </Node>
-                </Node>
-                <Node score="-0.0006021397383984635">
-                  <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004770368491767154"/>
-                  <Node score="5.1125976280503606e-05">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004280851636280593"/>
-                    <Node score="-0.0005620087070017006">
-                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004203785392536658"/>
-                      <Node score="-0.0003573951131779435">
-                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.003963451124757497"/>
-                      </Node>
+                  <Node score="-0.00032761101840625493">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.008412114314766241"/>
+                  </Node>
+                  <Node score="-2.196800619072353e-05">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.008962900774546765"/>
+                  </Node>
+                  <Node score="-0.0004160087416611679">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.010165228234230618"/>
+                  </Node>
+                  <Node score="8.147174164626627e-05">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.010943686851997377"/>
+                    <Node score="-0.00022744593180500783">
+                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.010709713212956688"/>
                     </Node>
                   </Node>
-                </Node>
-                <Node score="-1.4933899265537592e-05">
-                  <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.00513700861911644"/>
-                </Node>
-                <Node score="-0.00024107101424562831">
-                  <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.014680759042585737"/>
-                  <Node score="-0.000333166303989262">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.008399530760040146"/>
+                  <Node score="-0.0003970930857515546">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.011903353242951551"/>
                   </Node>
-                  <Node score="-4.3721846012111505e-05">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.008947623588853785"/>
-                  </Node>
-                  <Node score="-0.00044223524559342507">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0098890649262514"/>
+                  <Node score="-0.000240338066251586">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.014221632406825927"/>
                   </Node>
                 </Node>
               </Node>
-              <Node score="0.0002775287655336278">
+              <Node score="0.0003735440435179873">
+                <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.01572197519241115"/>
+              </Node>
+              <Node score="0.0002804652497660405">
                 <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.02012877371365153"/>
-                <Node score="-0.0002006473085756301">
+                <Node score="-0.00020106854141477813">
                   <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.018698682623887"/>
-                  <Node score="0.000332708844297272">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.015702032866392945"/>
-                  </Node>
                 </Node>
               </Node>
-              <Node score="-0.000570832462884443">
+              <Node score="-0.000567896022415568">
                 <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.021187101166021256"/>
               </Node>
             </Node>
-            <Node score="-0.0006839324384648616">
+            <Node score="-0.0006809959946544356">
               <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.02890124581447972"/>
             </Node>
           </Node>
@@ -119,96 +119,197 @@
           <MiningSchema>
             <MiningField name="change_from_previous_day"/>
           </MiningSchema>
-          <Node score="-8.511168877849281e-05">
+          <Node score="-8.540527813260898e-05">
             <True/>
-            <Node score="0.00010118833317257534">
+            <Node score="0.00010089467684371846">
               <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.023972045465686913"/>
-              <Node score="-0.0003111526094101094">
-                <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.015203957499897955"/>
-                <Node score="-8.061972626959547e-06">
-                  <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0037057470212330263"/>
-                  <Node score="1.052751982709966e-06">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0029793415395775583"/>
-                    <Node score="0.00016393994166999338">
-                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.032051453795083944"/>
-                    </Node>
-                    <Node score="-8.269229292218664e-06">
-                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0016479298526071789"/>
-                      <Node score="-0.00018341495440556455">
-                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.028524367061468294"/>
+              <Node score="-0.00033361011450728665">
+                <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.015259790271704826"/>
+                <Node score="0.0002156152768158656">
+                  <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.014702914019496147"/>
+                  <Node score="-8.355602711582413e-06">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0037057470212330263"/>
+                    <Node score="7.590990627739723e-07">
+                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0029793415395775583"/>
+                      <Node score="0.00016364627221124607">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.032051453795083944"/>
                       </Node>
-                      <Node score="6.201010055694776e-05">
-                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.01792076425293643"/>
+                      <Node score="-6.113542338792745e-06">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0016479298526071789"/>
+                      </Node>
+                      <Node score="0.000245578340139055">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.001894340174781606"/>
+                      </Node>
+                      <Node score="-5.009773689007255e-05">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0023693780395041774"/>
+                      </Node>
+                      <Node score="0.0001581826061458112">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.002550172421349996"/>
                       </Node>
                     </Node>
-                    <Node score="0.00024587198133350544">
-                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.001894340174781606"/>
-                    </Node>
-                    <Node score="-4.980410090306228e-05">
-                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0023693780395041774"/>
-                    </Node>
-                    <Node score="0.00015847625990528076">
-                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.002550172421349996"/>
+                    <Node score="0.00023495166864951245">
+                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0035129754943268713"/>
                     </Node>
                   </Node>
-                  <Node score="0.00023524532216586712">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0035129754943268713"/>
-                  </Node>
-                </Node>
-                <Node score="-0.00029666294275207644">
-                  <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004770368491767154"/>
-                  <Node score="0.0002912762125980897">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004280851636280593"/>
-                    <Node score="-0.0002605450205289974">
-                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004203785392536658"/>
-                      <Node score="-7.639278768552826e-05">
-                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.003963451124757497"/>
+                  <Node score="-0.0002969565770973322">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004770368491767154"/>
+                    <Node score="0.00029098255629203497">
+                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004280851636280593"/>
+                      <Node score="-0.0002608386593727538">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004203785392536658"/>
+                        <Node score="-7.66864228539933e-05">
+                          <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.003963451124757497"/>
+                        </Node>
                       </Node>
                     </Node>
                   </Node>
-                </Node>
-                <Node score="0.00023182230906035653">
-                  <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.00513700861911644"/>
-                </Node>
-                <Node score="5.5330407897517995e-05">
-                  <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.014680759042585737"/>
-                  <Node score="-0.0002305024200015598">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.008399530760040146"/>
-                    <Node score="-4.56419893953267e-05">
-                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.008180641622483715"/>
+                  <Node score="0.00023152865745568985">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.00513700861911644"/>
+                  </Node>
+                  <Node score="-0.00030824927401866905">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0064560438224993575"/>
+                    <Node score="-5.742309005068757e-05">
+                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.006314168235855393"/>
                     </Node>
                   </Node>
-                  <Node score="0.0002059131604816943">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.008947623588853785"/>
+                  <Node score="0.00011390463204979487">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.007096133619867285"/>
                   </Node>
-                  <Node score="-0.00015274890822722766">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0098890649262514"/>
+                  <Node score="-0.00010497512805698163">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.008412114314766241"/>
                   </Node>
-                  <Node score="0.0003295082928768049">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.010939821239222491"/>
-                    <Node score="2.7136629509141692e-05">
-                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.010705802402242512"/>
+                  <Node score="0.00022255518265915775">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.008962900774546765"/>
+                  </Node>
+                  <Node score="-0.00015147469720331073">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.009894763061628844"/>
+                  </Node>
+                  <Node score="-2.10043827369172e-05">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.014221632406825927"/>
+                    <Node score="0.00031565092611816474">
+                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.010943686851997377"/>
+                      <Node score="6.91378805769978e-06">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.010709713212956688"/>
+                      </Node>
                     </Node>
-                  </Node>
-                  <Node score="-0.0001340154269537716">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.01189908840632373"/>
                   </Node>
                 </Node>
               </Node>
-              <Node score="0.0004950387290726348">
+              <Node score="0.0005785160098673293">
+                <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.01572197519241115"/>
+              </Node>
+              <Node score="0.0004947450795616197">
                 <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.02012877371365153"/>
-                <Node score="6.468024700923168e-05">
+                <Node score="6.136469516301682e-05">
                   <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.018698682623887"/>
-                  <Node score="0.0005447007833195299">
-                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.015702032866392945"/>
-                  </Node>
                 </Node>
               </Node>
-              <Node score="-0.00026848640344623065">
+              <Node score="-0.00026878003220729254">
                 <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.021187101166021256"/>
               </Node>
             </Node>
-            <Node score="-0.0003702763746399864">
+            <Node score="-0.00037057000294293244">
+              <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.02890124581447972"/>
+            </Node>
+          </Node>
+        </TreeModel>
+      </Segment>
+      <Segment id="3">
+        <True/>
+        <TreeModel functionName="regression" missingValueStrategy="none" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+          <MiningSchema>
+            <MiningField name="change_from_previous_day"/>
+          </MiningSchema>
+          <Node score="-7.686479016509696e-05">
+            <True/>
+            <Node score="9.080522369778784e-05">
+              <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.023972045465686913"/>
+              <Node score="-0.00030024911803020924">
+                <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.015259790271704826"/>
+                <Node score="2.9374716877310468e-05">
+                  <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.014702914019496147"/>
+                  <Node score="-7.520043380701772e-06">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0037057470212330263"/>
+                    <Node score="-2.3912173192056248e-06">
+                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0029793415395775583"/>
+                      <Node score="0.0001472816524395827">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.032051453795083944"/>
+                      </Node>
+                      <Node score="-0.00012662937445898106">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.004439488600837747"/>
+                        <Node score="4.510135484053115e-05">
+                          <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.005744182748275932"/>
+                          <Node score="-0.00023821021921041673">
+                            <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.008984978510193564"/>
+                            <Node score="2.47062733461252e-05">
+                              <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.009677663460074079"/>
+                              <Node score="-2.3435806707476622e-05">
+                                <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.01101814364649212"/>
+                              </Node>
+                              <Node score="0.0003233607837431079">
+                                <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.010525222771627376"/>
+                              </Node>
+                            </Node>
+                          </Node>
+                        </Node>
+                      </Node>
+                      <Node score="0.00017568681759467627">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="0.003784237631970388"/>
+                      </Node>
+                    </Node>
+                    <Node score="0.00021145650562875043">
+                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0035129754943268713"/>
+                    </Node>
+                  </Node>
+                  <Node score="-0.00029024622079025275">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004770368491767154"/>
+                    <Node score="-0.000175319813290396">
+                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004371276590813115"/>
+                      <Node score="-0.00013531258351856824">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004203785392536658"/>
+                      </Node>
+                      <Node score="0.0002618843073902938">
+                        <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.004280851636280593"/>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node score="0.00020837579441155331">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.00513700861911644"/>
+                  </Node>
+                  <Node score="-0.0002774243422444906">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.0064560438224993575"/>
+                    <Node score="-5.168078964396631e-05">
+                      <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.006314168235855393"/>
+                    </Node>
+                  </Node>
+                  <Node score="0.00010251415467926698">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.007096133619867285"/>
+                  </Node>
+                  <Node score="-9.447761251413752e-05">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.008412114314766241"/>
+                  </Node>
+                  <Node score="0.0002002996743770236">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.008962900774546765"/>
+                  </Node>
+                  <Node score="-0.00012010179570670179">
+                    <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.010165228234230618"/>
+                  </Node>
+                </Node>
+              </Node>
+              <Node score="0.0005206644061992713">
+                <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.01572197519241115"/>
+              </Node>
+              <Node score="0.00044527057012870775">
+                <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.02012877371365153"/>
+                <Node score="5.5228223589909724e-05">
+                  <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.018698682623887"/>
+                </Node>
+              </Node>
+              <Node score="-0.0002419020424390005">
+                <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.021187101166021256"/>
+              </Node>
+            </Node>
+            <Node score="-0.0003335130161118556">
               <SimplePredicate field="change_from_previous_day" operator="greaterThan" value="-0.02890124581447972"/>
             </Node>
           </Node>

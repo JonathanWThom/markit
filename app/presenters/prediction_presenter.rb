@@ -1,5 +1,14 @@
 class PredictionPresenter < SimpleDelegator
   alias :prediction :__getobj__
+
+  def self.wrap(predictions)
+    predictions.map { |p| PredictionPresenter.new(p) }
+  end
+
+  def actual_price
+    "$#{prediction.actual_price.round(2)}"
+  end
+
   def projected_price
     "$#{prediction.projected_price.round(2)}"
   end
