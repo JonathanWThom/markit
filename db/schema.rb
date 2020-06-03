@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_30_192715) do
+ActiveRecord::Schema.define(version: 2020_06_03_024446) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(version: 2020_05_30_192715) do
     t.decimal "projected_change", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.decimal "actual_change"
+    t.decimal "projected_price"
+    t.decimal "actual_price"
     t.index ["price_id"], name: "index_predictions_on_price_id"
   end
 

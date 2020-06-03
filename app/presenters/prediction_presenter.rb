@@ -1,7 +1,7 @@
 class PredictionPresenter < SimpleDelegator
   alias :prediction :__getobj__
   def projected_price
-    "$#{((1 + percentage) * prediction.price.amount.to_f).round(2)}"
+    "$#{prediction.projected_price.round(2)}"
   end
 
   def formatted_price
