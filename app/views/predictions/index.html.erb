@@ -2,11 +2,11 @@
 <%= link_to "Home", root_path %>
 
 <% @predictions.each do |prediction| %>
+  <hr>
   <%= render "predictions/show", prediction: prediction %>
   <p><strong>Actual: </strong>
     <span class="<%= prediction.actual_change_class %>">
       <%= "#{prediction.actual_price} [#{prediction.actual_change_percentage}]" %>
     </span>
   </p>
-  <hr>
 <% end %>
