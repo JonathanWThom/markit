@@ -1,0 +1,14 @@
+<h3>DJIA</h3>
+<%= link_to "History", predictions_path %>
+<p>
+  <strong>Closing price for <%= prediction.date %>: </strong>
+  <%= prediction.formatted_price %>
+</p>
+<p>
+  <strong>Projected percent change on next trading day: </strong>
+  <%= prediction.change_percentage %>
+</p>
+<p>
+  <strong>Projected closing price on next trading day: </strong>
+  <%= prediction.projected_price %>
+</p>
