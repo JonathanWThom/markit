@@ -5,11 +5,14 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= stylesheet_pack_tag 'application', media: 'all' %>
     <%= javascript_pack_tag 'application' %>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="grid">
+    <div class="grid__center">
+      <%= yield %>
+    </div>
   </body>
 </html>

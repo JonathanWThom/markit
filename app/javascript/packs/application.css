@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid__center {
+  place-self: center;
+}
+
+.green {
+  color: green;
+}
+
+.gray, .grey {
+  color: gray;
+}
+
+.red {
+  color: red;
+}

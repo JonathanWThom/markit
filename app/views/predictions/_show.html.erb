@@ -1,14 +1,12 @@
 <h3>DJIA</h3>
 <%= link_to "History", predictions_path %>
 <p>
-  <strong>Closing price for <%= prediction.date %>: </strong>
+  <strong>Close <%= prediction.date %>: </strong>
   <%= prediction.formatted_price %>
 </p>
 <p>
-  <strong>Projected percent change on next trading day: </strong>
-  <%= prediction.change_percentage %>
-</p>
-<p>
-  <strong>Projected closing price on next trading day: </strong>
-  <%= prediction.projected_price %>
+  <strong>Projected: </strong>
+  <span class="<%= prediction.change_class %>">
+    <%= "#{prediction.projected_price} [#{prediction.change_percentage}]" %>
+  </span>
 </p>

@@ -9,6 +9,14 @@ class PredictionPresenter < SimpleDelegator
     "$#{prediction.actual_price.round(2)}"
   end
 
+  def actual_change_percentage
+    "#{percentage(actual_change).round(2)}%"
+  end
+
+  def actual_change_class
+    change_class(actual_change_percentage)
+  end
+
   def projected_price
     "$#{prediction.projected_price.round(2)}"
   end
@@ -21,14 +29,21 @@ class PredictionPresenter < SimpleDelegator
     "#{percentage.round(2)}%"
   end
 
+  def change_class(change = percentage)
+    percentage = percentage(change)
+
+    return "green" if percentage > 0
+    return "gray" if percentage == 0
+    return "red" if percentage < 0
+  end
+
   def date
-    # could wrap this in date formatter 
-    prediction.price.date
+    prediction.price.date.strftime("%B %e, %Y")
   end
 
   private
 
-  def percentage
-   (projected_change.to_f * 100)
+  def percentage(change = projected_change)
+   (change.to_f * 100)
   end
 end
