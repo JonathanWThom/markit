@@ -4,7 +4,9 @@ class PredictionsController < ApplicationController
   end
 
   def index
-    @predictions = PredictionPresenter.wrap(Prediction.where.not(actual_price: nil)) # be sure to update this if other indexes are supported
+    @predictions = PredictionPresenter.wrap(
+      Prediction.where.not(actual_price: nil).order(created_at: :desc)
+    ) # be sure to update this if other indexes are supported
   end
   
   def last 
