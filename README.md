@@ -29,3 +29,6 @@ https://markit-predictor.herokuapp.com/
 9. Dockerize (for Heroku)
 
 10. Add CI/GitHub actions
+
+11. Support longer term predictions (end of week/month/year). These should mark
+    when they were predicted, but then adjust as the target date gets closer.
