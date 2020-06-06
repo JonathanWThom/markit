@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_03_024446) do
+ActiveRecord::Schema.define(version: 2020_06_06_020916) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "accuracy_reports", force: :cascade do |t|
+    t.integer "model", null: false
+    t.decimal "rmse"
+    t.decimal "mae"
+    t.decimal "me"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["model"], name: "index_accuracy_reports_on_model"
+  end
 
   create_table "predictions", force: :cascade do |t|
     t.bigint "price_id"

@@ -21,7 +21,6 @@ module MlModels
       index = prices.index { |price| price[:date] == price_record.date }
      
       if previous_day(index).present?
-        # Put this in a presenter
         prediction = model.predict(change_from_previous_day: change_from_previous_day(prices[index], index))
         puts "Price on #{prices[index][:date]}: #{prices[index][:amount].to_f}"
         puts "Expected change on next trading day: #{(prediction * 100).round(2)}%"
@@ -34,6 +33,16 @@ module MlModels
 
         prediction
       end
+    end
+
+    def generate_accuracy_report
+      predictions = Prediction.where.not(actual_change: nil)
+      actual = predictions.pluck(:actual_change)
+      predicted = predictions.pluck(:projected_change)
+      metrics = Eps.metrics(actual, predicted)
+      puts metrics
+
+      AccuracyReport.create!(metrics.merge(model: :djia_close))
     end
 
     private

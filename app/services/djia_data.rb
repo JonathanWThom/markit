@@ -10,6 +10,8 @@ class DjiaData
     PredictionUpdater.new(Prediction.last).set_actual_values
 
     PredictionCreator.new.build_most_recent
+
+    MlModels::DjiaClose.new.generate_accuracy_report
   end
 
   private
