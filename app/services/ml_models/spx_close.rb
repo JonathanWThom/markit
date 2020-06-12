@@ -1,9 +1,9 @@
 module MlModels
-  class DjiaClose < Base
+  class SpxClose < Base
     private
 
     def symbol
-      :djia
+      :spx
     end
 
     def market_timing
@@ -11,11 +11,11 @@ module MlModels
     end
 
     def filename
-      "djia_close_model.pmml"
+      "spx_close_model.pmml"
     end
 
     def report_model
-      :djia_close
+      :spx_close
     end
   end
 end

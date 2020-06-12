@@ -1,3 +1,3 @@
-<h3>DJIA</h3>
-<%= link_to "History", predictions_path %>
+<h3><%= header(params) %></h3>
+<%= link_to "History", predictions_path(symbol: params[:symbol], market_timing: params[:market_timing]) %>
 <%= render "predictions/show", prediction: @prediction %>

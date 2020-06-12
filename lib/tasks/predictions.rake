@@ -3,4 +3,9 @@ namespace :predictions do
   task djia: :environment do
     DjiaData.new.generate_prediction
   end
+
+  desc "Fetch the lastest SPX data and create a prediction and accuracy report"
+  task spx: :environment do
+    SpxData.new.generate_prediction
+  end
 end

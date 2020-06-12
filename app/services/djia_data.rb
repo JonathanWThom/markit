@@ -1,33 +1,19 @@
-class DjiaData
-  def generate_prediction 
-    original_price_count = Price.close.djia.count
-    CreatePricesFromFile.new(file.path).build_from_csv
-
-    return if Price.close.djia.count == original_price_count
-
-    file.unlink
-
-    PredictionUpdater.new(Prediction.last).set_actual_values
-
-    PredictionCreator.new.build_most_recent
-
-    MlModels::DjiaClose.new.generate_accuracy_report
-  end
-
+class DjiaData < DataGenerator
   private
 
-  def file
-    @_file ||= begin
-      current_time = Time.new.to_i
-      url = "https://query1.finance.yahoo.com/v7/finance/download/%5EDJI?period1=475804800&period2=#{current_time}&interval=1d&events=history"
+  def model_class
+    MlModels::DjiaClose
+  end
 
-      csv = `curl --url '#{url}'`
+  def market_timing
+    :close
+  end
 
-      file = Tempfile.new('foo')
-      file.write(csv)
-      file.close
+  def symbol
+    :djia
+  end
 
-      file
-    end
+  def url
+    url = "https://query1.finance.yahoo.com/v7/finance/download/%5EDJI?period1=475804800&period2=#{current_time}&interval=1d&events=history"
   end
 end

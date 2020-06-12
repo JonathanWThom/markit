@@ -33,6 +33,7 @@ group :development, :test do
   
   # RSpec for Rails 5+
   gem "rspec-rails"
+  gem "pry"
 end
 
 group :development do
