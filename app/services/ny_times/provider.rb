@@ -10,7 +10,11 @@ module NyTimes
       limited_results = results[0..10]
       titles = limited_results.map { |r| r["title"] }
       abstracts = limited_results.map { |r| r["abstract"] }
-      (titles + abstracts).flatten
+
+      limited_results.map do |r|
+        "#{r["title"]}: #{r["abstract"]}"
+      end
+      #(titles + abstracts).flatten
     end
   end
 end
