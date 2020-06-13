@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 133920647065205b4cd5bf2e8e15313152ab1fb2
+  revision: e7154f346ae88c45429c151a366eb34572479284
   branch: 6-0-stable
   specs:
     actioncable (6.0.3.1)
@@ -82,7 +82,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/web-console.git
-  revision: d5f289dfef47c5c61fab88ec10e0106911ef3ccf
+  revision: d9fd6d28ba206ff4415808f5b995c18574847181
   specs:
     web-console (4.0.2)
       actionview (>= 6.0.0)
@@ -92,7 +92,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/webpacker.git
-  revision: 6779013ee445d162f55f11bfa10ac104178c8f42
+  revision: 22ab02b7c84e917f985ecc76f5916d144f43bfbf
   specs:
     webpacker (5.1.1)
       activesupport (>= 5.2)
@@ -124,22 +124,22 @@ GEM
     concurrent-ruby (1.1.6)
     crass (1.0.6)
     diff-lcs (1.3)
-    eps (0.3.5)
+    eps (0.3.4)
       lightgbm (>= 0.1.7)
       nokogiri
     erubi (1.9.0)
-    ffi (1.13.1)
+    ffi (1.12.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    httparty (0.18.1)
+    httparty (0.18.0)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
-    i18n (1.8.3)
+    i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
     jmespath (1.4.0)
-    lightgbm (0.1.9)
+    lightgbm (0.1.8)
       ffi
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -206,7 +206,7 @@ GEM
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
       spring (>= 1.2, < 3.0)
-    sprockets (4.0.2)
+    sprockets (4.0.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.2.1)
