@@ -28,6 +28,8 @@ gem "bootsnap", ">= 1.4.2", require: false
 gem "eps"
 # 🎉 Makes http fun again!
 gem "httparty"
+# The official AWS SDK for Ruby. https://aws.amazon.com/sdk-for-ruby/
+gem "aws-sdk-comprehend"
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console

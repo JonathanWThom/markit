@@ -7,8 +7,9 @@ module NyTimes
 
     def headlines_us
       results = client.top_stories_us.parsed_response["results"]
-      titles = results.map { |r| r["title"] }
-      abstracts = results.map { |r| r["abstract"] }
+      limited_results = results[0..10]
+      titles = limited_results.map { |r| r["title"] }
+      abstracts = limited_results.map { |r| r["abstract"] }
       (titles + abstracts).flatten
     end
   end
