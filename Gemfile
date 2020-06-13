@@ -26,6 +26,8 @@ gem "jbuilder", "~> 2.7"
 gem "bootsnap", ">= 1.4.2", require: false
 # Machine learning for Ruby
 gem "eps"
+# 🎉 Makes http fun again!
+gem "httparty"
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
