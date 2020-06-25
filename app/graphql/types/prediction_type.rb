@@ -7,5 +7,6 @@ module Types
     field :actual_change, Float, null: true
     field :projected_price, Float, null: true
     field :actual_price, Float, null: true
+    field :symbol, String, null: true
   end
 end
