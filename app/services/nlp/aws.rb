@@ -1,4 +1,4 @@
-module Sentiment
+module Nlp 
   class Aws
     def batch_sentiment(text_list)
       limited_list = text_list[0..24]

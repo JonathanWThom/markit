@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_06_020916) do
+ActiveRecord::Schema.define(version: 2020_06_26_024729) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +47,18 @@ ActiveRecord::Schema.define(version: 2020_06_06_020916) do
     t.index ["date"], name: "index_prices_on_date"
     t.index ["market_timing"], name: "index_prices_on_market_timing"
     t.index ["symbol"], name: "index_prices_on_symbol"
+  end
+
+  create_table "sentiments", force: :cascade do |t|
+    t.integer "source"
+    t.text "text"
+    t.string "sentiment"
+    t.decimal "positive"
+    t.decimal "neutral"
+    t.decimal "negative"
+    t.decimal "mixed"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   add_foreign_key "predictions", "prices"
