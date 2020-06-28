@@ -32,14 +32,19 @@ gem "httparty"
 gem "aws-sdk-comprehend"
 # A Ruby implementation of GraphQL.
 gem "graphql"
+# Mount the GraphiQL IDE in Ruby on Rails.
 gem "graphiql-rails"
+# The simplest way to group temporal data.
+gem "groupdate"
+# Pretty print your Ruby objects with style -- in full color and with proper indentation.
+gem "awesome_print"
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
-  
   # RSpec for Rails 5+
   gem "rspec-rails"
+  # A runtime developer console and IRB alternative with powerful introspection capabilities.
   gem "pry"
 end
 

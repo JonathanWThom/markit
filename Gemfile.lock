@@ -103,6 +103,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    awesome_print (1.8.0)
     aws-eventstream (1.1.0)
     aws-partitions (1.329.0)
     aws-sdk-comprehend (1.33.1)
@@ -135,6 +136,8 @@ GEM
       railties
       sprockets-rails
     graphql (1.11.1)
+    groupdate (5.0.0)
+      activesupport (>= 5)
     httparty (0.18.0)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
@@ -230,12 +233,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   aws-sdk-comprehend
   bootsnap (>= 1.4.2)
   byebug
   eps
   graphiql-rails
   graphql
+  groupdate
   httparty
   jbuilder (~> 2.7)
   listen (~> 3.2)
