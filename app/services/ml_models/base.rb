@@ -48,6 +48,16 @@ module MlModels
       end
     end
 
+    def generate_prediction_tally_report
+      # share this?
+      predictions = Prediction.send(market_timing).send(symbol).where.not(actual_change: nil)
+
+      total = predictions.count
+      correct = predictions.select { |p| p.actual_change.same_sign?(p.projected_change) }.count
+      puts "total: #{total}"
+      puts "correct: #{correct}"
+    end
+
     private
 
     def change_from_previous_day(price, index)
