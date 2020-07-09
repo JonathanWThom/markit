@@ -9,8 +9,7 @@ gem "rails"
 gem "pg"
 # Use Puma as the app server
 gem "puma"
-# Use development version of Webpacker
-gem "webpacker", github: "rails/webpacker"
+gem "webpacker"
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "jbuilder"
