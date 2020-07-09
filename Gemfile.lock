@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 457d9dc939f14ad810d05a8938b9e4d21cd619ea
+  revision: c9095561a12413ac9ea580a9446adba9475d230e
   branch: 6-0-stable
   specs:
     actioncable (6.0.3.2)
@@ -82,9 +82,9 @@ GIT
 
 GIT
   remote: https://github.com/rails/web-console.git
-  revision: d9fd6d28ba206ff4415808f5b995c18574847181
+  revision: b18a195183f82a6480629a115895a6737de5c4a5
   specs:
-    web-console (4.0.2)
+    web-console (4.0.3)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
@@ -92,7 +92,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/webpacker.git
-  revision: 22ab02b7c84e917f985ecc76f5916d144f43bfbf
+  revision: 5d27155bf7ae828700a3aebf3581faf66685b90c
   specs:
     webpacker (5.1.1)
       activesupport (>= 5.2)
@@ -105,17 +105,17 @@ GEM
   specs:
     awesome_print (1.8.0)
     aws-eventstream (1.1.0)
-    aws-partitions (1.329.0)
-    aws-sdk-comprehend (1.33.1)
+    aws-partitions (1.340.0)
+    aws-sdk-comprehend (1.34.0)
       aws-sdk-core (~> 3, >= 3.99.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-core (3.99.2)
+    aws-sdk-core (3.103.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
       aws-sigv4 (~> 1.1)
       jmespath (~> 1.0)
-    aws-sigv4 (1.1.4)
-      aws-eventstream (~> 1.0, >= 1.0.2)
+    aws-sigv4 (1.2.1)
+      aws-eventstream (~> 1, >= 1.0.2)
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
@@ -124,12 +124,12 @@ GEM
     coderay (1.1.3)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
-    diff-lcs (1.3)
-    eps (0.3.4)
+    diff-lcs (1.4.4)
+    eps (0.3.6)
       lightgbm (>= 0.1.7)
       nokogiri
     erubi (1.9.0)
-    ffi (1.12.2)
+    ffi (1.13.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     graphiql-rails (1.7.0)
@@ -138,7 +138,7 @@ GEM
     graphql (1.11.1)
     groupdate (5.0.0)
       activesupport (>= 5)
-    httparty (0.18.0)
+    httparty (0.18.1)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
     i18n (1.8.3)
@@ -146,7 +146,7 @@ GEM
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
     jmespath (1.4.0)
-    lightgbm (0.1.8)
+    lightgbm (0.1.9)
       ffi
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -169,7 +169,7 @@ GEM
     msgpack (1.3.3)
     multi_xml (0.6.0)
     nio4r (2.5.2)
-    nokogiri (1.10.9)
+    nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     pg (1.2.3)
     pry (0.13.1)
@@ -227,7 +227,7 @@ GEM
     websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.3.0)
+    zeitwerk (2.3.1)
 
 PLATFORMS
   ruby
@@ -235,23 +235,22 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   aws-sdk-comprehend
-  bootsnap (>= 1.4.2)
+  bootsnap
   byebug
   eps
   graphiql-rails
   graphql
   groupdate
   httparty
-  jbuilder (~> 2.7)
-  listen (~> 3.2)
-  pg (>= 0.18, < 2.0)
+  jbuilder
+  listen
+  pg
   pry
-  puma (~> 4.1)
+  puma
   rails!
   rspec-rails
   spring
-  spring-watcher-listen (~> 2.0.0)
-  tzinfo-data
+  spring-watcher-listen
   web-console!
   webpacker!
 
