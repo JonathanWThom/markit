@@ -2,9 +2,15 @@ class PredictionPresenter < SimpleDelegator
   alias :prediction :__getobj__
 
   def self.wrap(predictions, symbol, market_timing)
-    predictions.send(parsed_symbol(symbol)).send(parsed_market_timing(market_timing)).map do |p|
+    sym = parsed_symbol(symbol)
+    tim = parsed_market_timing(market_timing)
+    tally = PredictionTallyReport.send(sym).send(tim).last
+    
+    wrapped = predictions.send(sym).send(tim).map do |p|
       PredictionPresenter.new(p)
     end
+
+    [wrapped, tally]
   end
 
   def actual_price
@@ -41,6 +47,10 @@ class PredictionPresenter < SimpleDelegator
 
   def date
     prediction.price.date.strftime("%B %e, %Y")
+  end
+
+  def tally
+    PredictionTallyReport.send(parsed_symbol).last
   end
 
   class << self

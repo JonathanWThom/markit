@@ -49,13 +49,10 @@ module MlModels
     end
 
     def generate_prediction_tally_report
-      # share this?
       predictions = Prediction.send(market_timing).send(symbol).where.not(actual_change: nil)
-
       total = predictions.count
       correct = predictions.select { |p| p.actual_change.same_sign?(p.projected_change) }.count
-      puts "total: #{total}"
-      puts "correct: #{correct}"
+      PredictionTallyReport.create!(total: total, correct: correct, market_timing: market_timing, symbol: symbol)
     end
 
     private

@@ -11,7 +11,9 @@ class DataGenerator
 
     PredictionCreator.new(model_class, market_timing, symbol).build_most_recent
 
-    model_class.new.generate_accuracy_report
+    model = model_class.new
+    model.generate_accuracy_report
+    model.generate_prediction_tally_report
   end
 
   private

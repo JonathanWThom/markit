@@ -1,6 +1,10 @@
 <h3><%= header(params) %> Prediction History</h3>
 <%= link_to "Home", root_path(symbol: params[:symbol], market_timing: params[:market_timing]) %>
 
+<% if @tally.present? %>
+  <p><strong>Predictions in the right direction:</strong> <%= "#{@tally.correct} out of #{@tally.total}" %></p>
+<% end %>
+
 <% @predictions.each do |prediction| %>
   <hr>
   <%= render "predictions/show", prediction: prediction %>

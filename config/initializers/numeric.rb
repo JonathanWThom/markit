@@ -4,6 +4,6 @@ class Numeric
   end
 
   def same_sign?(numeric)
-    self.sign == numeric.sign
+    sign == numeric.sign
   end
 end

@@ -5,7 +5,7 @@ class PredictionsController < ApplicationController
   end
 
   def index
-    @predictions = PredictionPresenter.wrap(
+    @predictions, @tally = PredictionPresenter.wrap(
       Prediction.where.not(actual_price: nil).order(created_at: :desc),
       params[:symbol],
       params[:market_timing],
@@ -13,7 +13,7 @@ class PredictionsController < ApplicationController
   end
   
   def last 
-    @prediction = PredictionPresenter.wrap(
+    @prediction, _tally = PredictionPresenter.wrap(
       Prediction.order(created_at: :desc).limit(1),
       params[:symbol],
       params[:market_timing],
