@@ -9,7 +9,9 @@ class AverageSentimentCreator
       targets = sentiments.select { |s| s.created_at.to_date == date }
 
       [:positive, :negative, :neutral, :mixed].each do |trait|
-        create_average_sentiment(targets, date, trait)
+        if targets.present?
+          create_average_sentiment(targets, date, trait)
+        end
       end
     end
   end
