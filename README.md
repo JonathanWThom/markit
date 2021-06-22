@@ -4,10 +4,6 @@
 2. `rails db:seed`
 3. `rails s`
 
-# Site
-
-https://markit-predictor.herokuapp.com/
-
 # Ideas/Improvements
 
 1. Make the model more powerful by incorporating more data.
