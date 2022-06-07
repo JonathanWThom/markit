@@ -108,7 +108,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
-    jmespath (1.4.0)
+    jmespath (1.6.1)
     lightgbm (0.1.9)
       ffi
     listen (3.2.1)
